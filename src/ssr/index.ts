@@ -1,4 +1,4 @@
-/* GENERATED FILE */
+ /* GENERATED FILE */
 export { default as SSRBase } from "../lib/SSRBase";
 
 export * from "./Acorn";
@@ -263,6 +263,7 @@ export * from "./Calendar";
 export * from "./CalendarCheck";
 export * from "./CalendarDot";
 export * from "./CalendarDots";
+export * from "./CalendarGear";
 export * from "./CalendarHeart";
 export * from "./CalendarMinus";
 export * from "./CalendarPlus";

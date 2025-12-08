@@ -265,6 +265,7 @@ export * from "./csr/Calendar";
 export * from "./csr/CalendarCheck";
 export * from "./csr/CalendarDot";
 export * from "./csr/CalendarDots";
+export * from "./csr/CalendarGear";
 export * from "./csr/CalendarHeart";
 export * from "./csr/CalendarMinus";
 export * from "./csr/CalendarPlus";
