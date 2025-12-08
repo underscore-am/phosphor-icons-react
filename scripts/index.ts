@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import chalk from "chalk";
-import * as Core from "../core/src/index";
+import * as Core from "../core/dist/index.mjs";
 
 const { IconStyle, icons } = Core;
 
