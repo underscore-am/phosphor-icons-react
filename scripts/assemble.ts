@@ -17,32 +17,13 @@ import {
 } from ".";
 
 (function main() {
-  exec(
-    "git submodule update --remote --init --force --recursive",
-    (err, stdout, stderr) => {
-      if (err) {
-        console.error(`${chalk.inverse.red(" ERR ")} ${err.message}`);
-        process.exit(1);
-      }
+  const icons = readAssetsFromDisk();
+  if (!verifyIcons(icons)) {
+	process.exit(1);
+  }
 
-      if (stderr) {
-        console.error(`${chalk.inverse.red(" ERR ")} ${stderr}`);
-        process.exit(1);
-      }
-
-      console.log(
-        `${chalk.inverse.green(" OK ")} Updated submodule @phosphor-icons/core`
-      );
-
-      const icons = readAssetsFromDisk();
-      if (!verifyIcons(icons)) {
-        process.exit(1);
-      }
-
-      generateComponents(icons);
-      generateExports(icons);
-    }
-  );
+  generateComponents(icons);
+  generateExports(icons);
 })();
 
 function generateComponents(icons: AssetMap) {
