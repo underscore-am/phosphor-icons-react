@@ -473,6 +473,7 @@ export * from "./csr/CursorClick";
 export * from "./csr/CursorText";
 export * from "./csr/Cylinder";
 export * from "./csr/Database";
+export * from "./csr/Day1";
 export * from "./csr/Desk";
 export * from "./csr/Desktop";
 export * from "./csr/DesktopTower";

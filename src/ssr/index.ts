@@ -471,6 +471,7 @@ export * from "./CursorClick";
 export * from "./CursorText";
 export * from "./Cylinder";
 export * from "./Database";
+export * from "./Day1";
 export * from "./Desk";
 export * from "./Desktop";
 export * from "./DesktopTower";
